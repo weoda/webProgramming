@@ -1,0 +1,29 @@
+.container_b {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background-color: pink;
+}
+.container_b div {
+  box-sizing: border-box;
+  background-color: #eeeff2;
+  width: 110px;
+  height: 150px;
+  border-left: 10px dotted #d0d0ff;
+  font-size: 40px;
+  font-family: tahoma;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.container_b :last-child {
+  position: absolute;
+  right: 0;
+  align-self: flex-end;
+}
+.container_b div:hover {
+  background-color: yellow;
+  color: goldenrod;
+  cursor: grab;
+  box-shadow: 1px red;
+}
