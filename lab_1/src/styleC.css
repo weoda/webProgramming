@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap");
+
+div:hover {
+  box-shadow: 0 10px 6px -6px #777;
+}
+div :nth-child(2n):hover {
+  box-shadow: 0 0 0 5px #eaed4c, 0 0 0 8px #fc4e54;
+}
+.container_b div,
+.container div {
+  font-family: "Grandstander", cursive;
+}
