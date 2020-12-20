@@ -1,0 +1,33 @@
+.container {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+}
+.navbar {
+  box-sizing: border-box;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  width: 100vw;
+  height: 75px;
+  background-color: rgb(248, 98, 161);
+  justify-content: space-between;
+}
+.mainTitle {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: aliceblue;
+}
+.rightSectionBar {
+  display: flex;
+  width: 40vw;
+  justify-content: space-around;
+}
+.rightSectionBar > * {
+  color: aliceblue;
+  font-size: 1.3em;
+  text-decoration: none;
+}

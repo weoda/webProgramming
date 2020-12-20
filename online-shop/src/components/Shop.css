@@ -1,0 +1,14 @@
+.shopCont {
+  margin: 20px;
+  box-sizing: content-box;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: "space-around";
+}
+.body > * {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
