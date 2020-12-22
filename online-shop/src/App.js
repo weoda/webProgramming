@@ -9,15 +9,20 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      users: {},
+      users: [],
+      currUserId: null,
     };
   }
   componentDidMount() {
     fetch("http://localhost:5000/users")
       .then((res) => res.json())
-      .then((data) => this.setState({ users: data }));
+      .then((data) => this.setState({ users: data, currUserId: data[0]._id }));
   }
+  changeUser = (id) => {
+    this.setState({ currUserId: id });
+  };
   render() {
+    console.log(this.state.currUserId);
     return (
       <div className="container">
         <div className="navbar">
@@ -43,7 +48,13 @@ class App extends React.Component {
             <Route
               path="/profile"
               exact
-              render={() => <Profile users={this.state.users} />}
+              render={() => (
+                <Profile
+                  id={this.state.currUserId}
+                  changeUser={this.changeUser}
+                  users={this.state.users}
+                />
+              )}
             />
           </Switch>
         </div>
